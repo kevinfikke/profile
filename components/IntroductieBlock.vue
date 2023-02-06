@@ -18,12 +18,12 @@
     
     <v-container v-for="(contentblock, index) in contentblocks" :key="index" class="info-block">
       <v-row>
-        <v-col cols="12">
-          <h2 v-if="index === 'personalInfo'">Personal info</h2>
-          <h2 v-else>Contact info</h2>
+        <v-col cols="12" class="pb-0">
+          <h2 class="info-title" v-if="index === 'personalInfo'">Personal info</h2>
+          <h2 class="info-title" v-else>Contact info</h2>
         </v-col>
         <v-col>
-          <v-row v-for="info in contentblock" :key="info">
+          <v-row v-for="info in contentblock" :key="info" class="mt-n2">
             <v-col cols="2">
               <v-icon class="personinfo-block-icon">{{ info.icon }}</v-icon>
             </v-col>
@@ -37,22 +37,24 @@
 
     <v-container class="education-block">
       <v-row>
-        <v-col>
-          <h2>Education</h2>
+        <v-col class="pb-0">
+          <h2 class="info-title">Education</h2>
         </v-col>
       </v-row>
       <v-row v-for="education in educations" :key="education.id">
         <!-- {{ education }} -->
-        <v-col cols="2">
-          <v-icon>{{ education.icon }}</v-icon>
+        <v-col cols="2" class="pb-0">
+          <v-icon class="personinfo-block-icon">{{ education.icon }}</v-icon>
         </v-col>
-        <v-col cols="10">
+        <v-col cols="10" class="pb-0">
           {{ education.name }}
         </v-col>
-        <v-col cols="12">
+        <v-col cols="2"></v-col>
+        <v-col cols="10" class="mt-n4 pb-0">
           {{ education.content }}
         </v-col>
-        <v-col cols="12">
+        <v-col cols="2"></v-col>
+        <v-col cols="10" class="mt-n4 pb-0">
           {{ education.year }}
         </v-col>
       </v-row>
@@ -68,7 +70,7 @@ const contentblocks = ref({
     {id:1, icon: 'mdi-map-marker', name: 'Woonplaats:', content: 'Breda'},
     {id:2, icon: 'mdi-phone', name: 'Telefoon:', content: '06-52868327'},
     {id:3, icon: 'mdi-cake-variant', name: 'Geboortedatum:', content: '16-03-1992'},
-    {id:4, icon: 'mdi-home-city', name: 'Gebooorteplaats:', content: 'Oosterhout'},
+    {id:4, icon: 'mdi-home', name: 'Gebooorteplaats:', content: 'Oosterhout'},
     {id:5, icon: 'mdi-account-supervisor-circle', name: 'Burgelijke staat:', content: 'Ongehuwd'},
     {id:6, icon: 'mdi-car', name: 'Rijbewijs:', content: 'Ja'},
     {id:7, icon: 'mdi-earth', name: 'Nationaliteit:', content: 'Nederlands'},

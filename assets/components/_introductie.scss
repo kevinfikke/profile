@@ -1,9 +1,13 @@
 .introductie-wrapper{
-    .profilephoto-block{
-
+    .info-block{
+        .info-title{
+            border-bottom: 1px solid $black;
+        }
     }
-    .personinfo-block-title{
-        border-bottom: 1px solid $black;
+    .education-block{
+        .info-title{
+            border-bottom: 1px solid $black;
+        }
     }
     .personinfo-block-icon{
         color: $white;
