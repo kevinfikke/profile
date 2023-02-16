@@ -42,7 +42,6 @@
         </v-col>
       </v-row>
       <v-row v-for="education in educations" :key="education.id">
-        <!-- {{ education }} -->
         <v-col cols="2" class="pb-0">
           <v-icon class="personinfo-block-icon">{{ education.icon }}</v-icon>
         </v-col>
@@ -60,6 +59,21 @@
       </v-row>
     </v-container>
 
+    <v-container class="info-block">
+      <v-row>
+        <v-col class="pb-0">
+          <h2 class="info-title">Hobby's</h2>
+        </v-col>
+      </v-row>
+      <v-row v-for="hobby in hobbies" :key="hobby.id">
+        <v-col cols="2" class="pb-0">
+          <v-icon class="personinfo-block-icon">{{ hobby.icon }}</v-icon>
+        </v-col>
+        <v-col cols="10" class="pb-0">
+          {{ hobby.name }}
+        </v-col>
+      </v-row>
+    </v-container>
   </div>
 </template>
 
