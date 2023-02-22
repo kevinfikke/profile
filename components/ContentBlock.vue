@@ -25,9 +25,9 @@
     <v-container class="experence-block pt-0">
       <v-row>
         <v-col cols="12 py-0">
-          <h1>Experence</h1>
+          <h2>Experence</h2>
         </v-col>
-        <v-col cols="12" v-for="job in data.result.jobs" :key="job.name" class="line-top pt-0 pb-6">
+        <v-col cols="12" v-for="job in data.result.jobs" :key="job.name" class="line-top pt-0 pb-6 pl-0">
           <v-container class="pt-2">
             <v-row>
               <v-col cols="12">

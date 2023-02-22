@@ -1,0 +1,152 @@
+// ----------------------------------------
+// font Poppins
+// ----------------------------------------
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+
+// ----------------------------------------
+// typography
+// ----------------------------------------
+$font-family-poppins: 'Poppins', sans-serif;
+$font-family-base: $font-family-poppins !default;
+
+:root {
+  font-family: $font-family-base !important;
+}
+
+
+// ----------------------------------------
+// sizes
+// ----------------------------------------
+$font-sizes: (
+  14: 1rem * .875,
+  16: 1rem,
+  18: 1rem * 1.125,
+  20: 1rem * 1.25,
+  22: 1rem * 1.375,
+  24: 1rem * 1.5,
+  28: 1rem * 1.75,
+  32: 1rem * 2,
+  40: 1rem * 2.75,
+  50: 1rem * 3.125,
+  60: 1rem * 3.75,
+  70: 1rem * 4.375,
+  100: 1rem * 6.3,
+);
+
+
+// ----------------------------------------
+// weights
+// ----------------------------------------
+$font-weights: (
+  'light': 300,
+  'normal': 400,
+  'semi-bold': 600,
+  'bold': 700,
+  'extra-bold': 800
+);
+
+
+// ----------------------------------------
+// line heights
+// ----------------------------------------
+$line-heights: (
+  'base': 18px,
+  19: 19px,
+  20: 20px,
+  24: 24px,
+  28: 28px,
+  32: 32px,
+  40: 40px,
+  54: 54px,
+  70: 70px,
+);
+
+
+// ----------------------------------------
+// letter spacings
+// ----------------------------------------
+$letter-spacing-base: .5px !default;
+
+
+// ----------------------------------------
+// paragraph spacing
+// ----------------------------------------
+
+
+// ----------------------------------------
+// text pixelation fix
+// ----------------------------------------
+* {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004) !important;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+
+// ----------------------------------------
+// text
+// ----------------------------------------
+h1 {
+  font-size: map-get($map: $font-sizes, $key: 60);
+  font-weight: map-get($map: $font-weights, $key: 'extra-bold');
+  line-height: map-get($map: $line-heights, $key: 70);
+  letter-spacing: 20px;
+}
+
+h2 {
+  font-size: map-get($map: $font-sizes, $key: 32);
+  font-weight: map-get($map: $font-weights, $key: 'bold');
+  line-height: map-get($map: $line-heights, $key: 54);
+  letter-spacing: 5px;
+}
+
+h3 {
+  font-size: map-get($map: $font-sizes, $key: 22);
+  font-weight: map-get($map: $font-weights, $key: 'bold');
+  line-height: map-get($map: $line-heights, $key: 28);
+}
+
+h4 {
+  font-size: map-get($map: $font-sizes, $key: 16);
+  font-weight: map-get($map: $font-weights, $key: 'semi-bold');
+  line-height: map-get($map: $line-heights, $key: 32);
+}
+
+// h5 {
+
+// }
+
+// h6 {
+
+// }
+
+p {
+  font-size: map-get($map: $font-sizes, $key: 16);
+  font-weight: map-get($map: $font-weights, $key: 'light');
+  line-height: map-get($map: $line-heights, $key: 24);
+  color: $secondary;
+  max-width: 550px;
+}
+
+strong {
+}
+
+a {
+}
+li{
+    margin-left:10px;
+    padding-left:10px;
+}
+li::marker {
+    content: ">";
+    font-size: 20px;
+    color: $primary;
+    font-weight: 600;
+}
+
+
+
+// ----------------------------------------
+// extra
+// ----------------------------------------

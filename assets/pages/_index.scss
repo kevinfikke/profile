@@ -1,6 +1,10 @@
 .homepage-wrapper{
-    background-color: $accent-200;
-    .content-block{
-        border-left: 1px solid $black;
+    background-color: $primary-200;
+    .main-content-block{
+        background-color: $secondary;
+        border-radius: 25px;
+        .content-block{
+            border-left: 1px solid $black;
+        }
     }
 }
