@@ -134,6 +134,7 @@ strong {
 
 a {
 }
+
 li{
     margin-left:10px;
     padding-left:10px;
@@ -145,8 +146,16 @@ li::marker {
     font-weight: 600;
 }
 
-
-
+.v-btn{
+    background-color: $primary!important;
+    transition: background-color 2s ease-;
+}
+.v-btn:hover{
+    background-color: $primary-700!important;
+}
+.v-breadcrumbs{
+    padding: 0px!important;
+}
 // ----------------------------------------
 // extra
 // ----------------------------------------

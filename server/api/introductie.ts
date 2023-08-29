@@ -6,7 +6,6 @@ export default defineEventHandler(async () => {
             personalInfo : [
                 {id:0, icon: 'mdi-map-marker', name: 'Adres:', content: 'Haagdijk 137'},
                 {id:1, icon: 'mdi-map-marker', name: 'Woonplaats:', content: 'Breda'},
-                {id:2, icon: 'mdi-phone', name: 'Telefoon:', content: '06-52868327'},
                 {id:3, icon: 'mdi-cake-variant', name: 'Geboortedatum:', content: '16-03-1992'},
                 {id:4, icon: 'mdi-home', name: 'Gebooorteplaats:', content: 'Oosterhout'},
                 {id:5, icon: 'mdi-account-supervisor-circle', name: 'Burgelijke staat:', content: 'Ongehuwd'},
@@ -30,6 +29,7 @@ export default defineEventHandler(async () => {
             {id: 1, icon: 'mdi-swim', name: 'Zwemmen'},
             {id: 2, icon: 'mdi-tent', name: 'Festivals'},
             {id: 3, icon: 'mdi-cards', name: 'Magic the gardering'},
+            {id: 4, icon: 'mdi-dumbbell', name: 'sporten'},
         ],
     }
     // return the data to the page

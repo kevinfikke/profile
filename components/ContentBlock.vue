@@ -10,7 +10,7 @@
         </v-col>
       </v-row>
     </v-container>
-    <v-container class="mt-15 py-0 profile-block">
+    <v-container class="mt-10 py-0 profile-block">
       <v-row>
         <v-col class="profile-title  pb-1 ">
           <h2>My Profile</h2>
@@ -47,6 +47,14 @@
               <v-col cols="12" class="py-0">
                 <div v-html="job.content"></div>
               </v-col>
+              <v-btn
+                v-show="job.position == 'Front-end developer'"
+                rounded="pill"
+                color="second"
+                class="mt-5 ml-5"
+              >
+                <NuxtLink :to="('/projects')">Lees meer</NuxtLink>
+              </v-btn>
             </v-row>
           </v-container>
         </v-col>

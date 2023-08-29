@@ -1,0 +1,13 @@
+.projects-wrapper{
+    .projects-overview-block{
+        .projects-content{
+            overflow: hidden;
+            -webkit-line-clamp: 7;
+            -webkit-box-orient: vertical;
+            display: -webkit-box;
+        }
+        .image{
+            height: 100%!important;
+        }
+    }
+}
